@@ -4,13 +4,13 @@ float lineYB = 375;
 float lineXA = 25;
 float lineXB = 475;
 //arrays for circles
-float[] elX = new float[2800];    
-float[] elY = new float[2800];
+float[] elX = new float[51];    
+float[] elY = new float[51];
 float elDiam = 15;
 float elRad = elDiam/2;
 //corresponding arrays for speed
-float[] elXSpeed = new float[2800];    
-float[] elYSpeed = new float[2800];  
+float[] elXSpeed = new float[51];    
+float[] elYSpeed = new float[51];  
 //rectangle dimensions
 int rX = 175;
 int rY = 150;
@@ -20,7 +20,7 @@ int rH = 100;
 void setup() {
   size (500, 400);
  // background(#C6ECF2);
-  for (int i = 0; i < 2800; i++) {
+  for (int i = 0; i < 51; i++) {
     elY[i] = random(25, 375);
     elX[i] = random(25, 475);
     elYSpeed[i] = random(1, 10);
@@ -33,7 +33,7 @@ void draw () {
   fill(0);
   rect(rX, rY, rW, rH);
   
-  for (int i = 0; i < 2800; i++) {
+  for (int i = 0; i < 51; i++) {
     
     fill(#25F226);
     ellipse(elX[i], elY[i], elDiam, elDiam);
