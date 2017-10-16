@@ -19,6 +19,19 @@ class Spider {
       xSpeed = random(-10, 10);
       ySpeed = random(5, 10);
     }
+    
+    if ((keyPressed == true) && (key == 'd')) {
+      xPos += 10;
+    }
+    if ((keyPressed == true) && (key == 'a')) {
+      xPos -= 10;
+    }
+    if ((keyPressed == true) && (key == 'w')) {
+      yPos -= 10;
+    }
+    if ((keyPressed == true) && (key == 's')) {
+      yPos += 10;
+    }
   }
   void display() {
     background(#0BDE21);
